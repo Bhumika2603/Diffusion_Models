@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9d183de2-d51c-4230-9c92-23a20189ee53)# Diffusion Models (DDPM) Project
+# Diffusion Models (DDPM) Project
 
 ## Overview
 
@@ -49,6 +49,11 @@ All training results, including images and model checkpoints, are saved and avai
 
 Forward Diffusion Process using linear scheduler(Noising the images):
 
+![DDPM_linear_scheduler_forward_diffusion_noising example_iamge](linear_scheduler_forward_diffusion.png)
+
+Forward Diffusion Process using cosine scheduler(Noising the images) - **improved results**:
+
+![DDPM_cosine_scheduler_forward_diffusion_noising example_iamge](cosine_scheduler_forward_diffusion.png)
 
 ## Usage
 
