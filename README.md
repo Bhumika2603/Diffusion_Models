@@ -33,6 +33,14 @@ In the backward diffusion process, the model learns to reverse the noise additio
 - **Linear Scheduler**: Adds noise linearly across the steps.
 - **Cosine Scheduler**: Improves results by adding noise in a cosine manner.
 
+Forward Diffusion Process using linear scheduler(Noising the images):
+
+![DDPM_linear_scheduler_forward_diffusion_noising example_iamge](linear_scheduler_forward_diffusion.png)
+
+Forward Diffusion Process using cosine scheduler(Noising the images) - **improved results**:
+
+![DDPM_cosine_scheduler_forward_diffusion_noising example_iamge](cosine_scheduler_forward_diffusion.png)
+
 ## UNet for DDPM
 
 The UNet architecture is crucial in the backward diffusion process. It consists of:
@@ -47,13 +55,10 @@ The skip connections in UNet help preserve spatial information, making it effect
 
 All training results, including images and model checkpoints, are saved and available for review.
 
-Forward Diffusion Process using linear scheduler(Noising the images):
+Some training results on MNSIT dataset with DDPM Conditional - left : Without EMA , Right : With EMA over few iterations:
 
-![DDPM_linear_scheduler_forward_diffusion_noising example_iamge](linear_scheduler_forward_diffusion.png)
+![MNSIT_Conditional_EMA_AND WITHOUT_EMA](mnsit_conditional_results.png)
 
-Forward Diffusion Process using cosine scheduler(Noising the images) - **improved results**:
-
-![DDPM_cosine_scheduler_forward_diffusion_noising example_iamge](cosine_scheduler_forward_diffusion.png)
 
 ## Usage
 
